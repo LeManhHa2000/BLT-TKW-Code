@@ -1,0 +1,293 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+/*----------------------------------Header---------------------------------*/
+
+header {
+    background: lightgray;
+    color: green;
+    height: 70px;
+    display: flex;
+}
+
+header h1 {
+    animation-name: change;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.8s;
+}
+
+@keyframes change {
+    0% {
+        color: green;
+    }
+    25% {
+        color: blue;
+    }
+    50% {
+        color: yellow;
+    }
+    75% {
+        color: red;
+    }
+    100% {
+        color: goldenrod;
+    }
+}
+
+header p {
+    animation-name: change;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.8s;
+}
+
+.image img {
+    border-radius: 50%;
+    padding: 5px;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes example {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.content {
+    width: 100%;
+    margin-left: 35%;
+}
+
+.content p {
+    margin-left: 4%;
+}
+
+
+/*------------------------------------Menu---------------------------------------*/
+
+nav {
+    padding: 0px;
+    background: grey;
+    height: 40px;
+}
+
+nav ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+nav ul li {
+    list-style: none;
+    position: relative;
+    display: inline-block;
+}
+
+nav ul li a {
+    padding: 11px 20px;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+nav ul li a:hover {
+    background: wheat;
+}
+
+nav ul li>ul {
+    visibility: hidden;
+    position: absolute;
+    background: grey;
+}
+
+nav ul li>ul li {
+    text-align: center;
+    width: 120px;
+}
+
+nav ul li>ul li a {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+nav ul li:hover>ul {
+    visibility: visible;
+}
+
+
+/*---------------------------------------Nội dung-----------------------------------*/
+
+.container_main {
+    width: 1080px;
+    margin: 20px auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    padding-top: 20px;
+}
+
+.col-1 {
+    flex-basis: 30%;
+    min-width: 200px;
+    border: 1px solid white;
+    margin: 10px;
+}
+
+.col-1 img {
+    width: 100%;
+    height: 182px;
+}
+
+.row ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px auto;
+}
+
+.row ul li a {
+    text-decoration: none;
+    border: 3px solid yellow;
+    padding: 3px;
+    background: burlywood;
+    color: white;
+}
+
+.row ul li a:hover {
+    background: gray;
+}
+
+.row select {
+    border: 2px solid tomato;
+    background: lightcyan;
+    color: purple;
+}
+
+.col-1 h3 {
+    float: right;
+    color: red;
+    padding-right: 15px;
+}
+
+marquee {
+    border: 2px solid #f5f5f5;
+    color: magenta;
+    background: lightblue;
+}
+
+sup {
+    top: - 0.5em;
+}
+
+.full {
+    padding-top: 20px;
+}
+
+.hero {
+    text-align: center;
+    color: royalblue;
+    margin-bottom: 20px;
+}
+
+
+/*---------------------------------------Footer--------------------------*/
+
+footer {
+    text-align: center;
+    border-top: 2px solid red;
+    height: 200px;
+    background: lightcyan;
+    padding-top: 10px;
+}
+
+.infor-left {
+    width: 50%;
+    float: left;
+    padding-top: 30px;
+}
+
+.infor-left p {
+    padding: 6px;
+}
+
+.infor-right {
+    float: right;
+    width: 50%;
+    padding: 30px;
+}
+
+.infor-right p {
+    padding-top: 20px;
+    font-size: 20px;
+    color: red;
+}
+
+
+/*-------------------------Đăng nhập-----------------------*/
+
+.container-login {
+    width: 1080px;
+    margin: auto;
+}
+
+table {
+    margin: 100px auto auto auto;
+    width: 40%;
+    border: 1px solid lightgoldenrodyellow;
+    border-collapse: collapse;
+}
+
+table caption {
+    font-size: 23px;
+}
+
+table tr td,
+th {
+    padding-top: 30px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.le {
+    background: tomato;
+    color: white;
+}
+
+.chan {
+    background: lightgoldenrodyellow;
+}
+
+input[type=text] {
+    width: 90%;
+    padding: 8px 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=pass] {
+    width: 90%;
+    padding: 8px 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+button {
+    width: 30%;
+    padding: 8px 8px;
+    box-sizing: border-box;
+}
