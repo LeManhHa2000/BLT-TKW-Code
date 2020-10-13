@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/trangchu.css">
+    <script>
+        function kiemtra() {
+            if (document.querySelector("#name").value === "lemanhha" && document.querySelector("#pass").value === "1234") {
+                window.location.href = '/html/trangchu.html';
+            } else {
+                alert("Tài khoản hoặc mật khẩu nhập sai, Vui lòng nhập lại!");
+            };
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="image">
+            <img src="/img/anhxoay1.jpg" width="70px">
+        </div>
+        <div class="content">
+            <h1>Liên Quân Mobile</h1>
+            <p>Shop acc uy tín chất lượng !</p>
+        </div>
+    </header>
+    <div class="container-login">
+        <table>
+            <caption class="le"><b>Đăng nhập</b></caption>
+            <tr class="chan">
+                <td>
+                    <label>Tài khoản:</label><input type="text" id="name">
+                </td>
+            </tr>
+            <tr class="chan">
+                <td>
+                    <label>Mật khẩu:</label><input type="pass" id="pass">
+                </td>
+            </tr>
+            <tr class="chan">
+                <td style="text-align: center;">
+                    <button onclick="kiemtra()">Đăng nhập</button>
+                    <button>Đăng kí</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
